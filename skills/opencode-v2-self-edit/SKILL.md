@@ -205,7 +205,7 @@ state-changing actions; explain side effects and obtain required approval.
    backup in the same action block. For example, after resolving `$target`:
 
    ```powershell
-   $backup = '{0}.{1}.bak' -f $target, (Get-Date -Format 'yyyyMMdd-HHmm')
+   $backup = '{0}.{1}.bak' -f $target, (Get-Date -Format 'yyyyMMdd-HHmmss')
    if (Test-Path -LiteralPath $backup) { throw 'Backup already exists; do not overwrite it.' }
    [System.IO.File]::Copy($target, $backup, $false)
    ```
