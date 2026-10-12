@@ -242,12 +242,12 @@ installation, authentication changes, or process lifecycle actions. For other
 mutations, show the exact command or tool payload and proposed diff, then wait for
 explicit approval. Approval does not carry forward to the next action.
 
-For every existing target, create `<name>.YYYYMMDD-HHMM.bak` beside it before
+For every existing target, create `<name>.YYYYMMDD-HHMMSS.bak` beside it before
 editing. The backup and edit belong in the same action block. Never overwrite a
-backup with the same minute's name:
+backup with the same timestamped name:
 
 ```powershell
-$backup = '{0}.{1}.bak' -f $target, (Get-Date -Format 'yyyyMMdd-HHmm')
+$backup = '{0}.{1}.bak' -f $target, (Get-Date -Format 'yyyyMMdd-HHmmss')
 if (Test-Path -LiteralPath $backup) { throw 'Backup already exists; do not overwrite it.' }
 [System.IO.File]::Copy($target, $backup, $false)
 ```
