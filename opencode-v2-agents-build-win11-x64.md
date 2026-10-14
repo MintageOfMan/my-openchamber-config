@@ -114,7 +114,6 @@ Before config/settings edits, load and follow:
 - Filter large MCP results inside `execute` and return only the fields needed.
 
 ----------------------------------------------------------------------------------------------------------------------
-
 # About User
 - Name: 
 - Interests: 
