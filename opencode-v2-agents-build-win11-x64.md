@@ -82,8 +82,9 @@ Before config/settings edits, load and follow:
 - Comment and document code, focusing on why.
 - Comment non-obvious logic where needed. Add documentation only when requested or essential to use the result.
 - Any script or software created should be as self-contained and as portable as possible.
-- In the `project_directory` create an `AGENTS.md` to make it easy for AI agents to understand the project in the future.
-- In the `project_directory` create a `README.md` to make it easy for a person to understand the project in the future. Keep it very short and tight.
+- In the `project_directory` create an `AGENTS.md` for AI agents working on the project in the future.
+- In the `project_directory` create a `README.md` for humans.
+- In the `project_directory` create a `HANDOFF.md` to explain where we left off.
 
 ## Fastest completion time for task and minimum verification/testing/checks/time spent
 - Always take the shortest and fastest possible route. Only the minimal viable product.
@@ -114,9 +115,3 @@ Before config/settings edits, load and follow:
 - Filter large MCP results inside `execute` and return only the fields needed.
 
 ----------------------------------------------------------------------------------------------------------------------
-# About User
-- Name: 
-- Interests: 
-
----------------------------------------------------------------------------------------------
-
